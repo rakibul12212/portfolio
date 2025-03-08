@@ -1,6 +1,12 @@
 "use client";
 
+import HomePage from "@/component/UI/homepage/HomePage";
+
 const Home = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 };
 export default Home;
