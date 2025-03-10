@@ -1,4 +1,6 @@
+import Navbar from "@/component/shared/Navbar";
 import "./globals.css";
+import Footer from "@/component/shared/Footer";
 
 export const metadata = {
   title: "Rakibul Islam Portfolio",
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-[#000000]">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
