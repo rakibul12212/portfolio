@@ -1,0 +1,8 @@
+/* In your CSS file */
+/* styles.css */
+.text-outline {
+    -webkit-text-stroke: 10px #FFFFFF;
+    /* White outline with 1px stroke */
+    text: transparent;
+    /* Make the text color transparent */
+}
