@@ -18,9 +18,9 @@ const Navbar = () => {
         </div>
         <div className="space-x-2 md:space-x-6 flex items-center  ps-5 md:ps-0 2xl:ps-0 ">
           <Link href="/">
-            <button className="group bg-neutral-700 text-white px-4 py-1 rounded-full flex items-center  hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
+            <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center  hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
               <span className="relative overflow-hidden">
-                <span className="block font-semibold transition-all duration-300 group-hover:font-bold translate-y-0 group-hover:-translate-y-[100%]">
+                <span className="block font-semibold transition-all duration-300 group-hover:font-semibold translate-y-0 group-hover:-translate-y-[100%]">
                   LET'S TALK
                 </span>
                 <span className="absolute top-0 left-0 w-full block font-semibold translate-y-full group-hover:translate-y-0 transition-all duration-300">
@@ -35,7 +35,7 @@ const Navbar = () => {
 
           <button
             onClick={toggleMenu}
-            className="group bg-white text-black px-4 py-1 rounded-full flex items-center gap-x-1 transition-all duration-300"
+            className="group bg-white text-black px-3 py-1 rounded-full flex items-center  transition-all duration-300"
           >
             <span className="relative overflow-hidden">
               {/* Default text that animates on click */}
