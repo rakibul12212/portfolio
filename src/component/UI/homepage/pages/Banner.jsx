@@ -9,7 +9,7 @@ const Banner = () => {
   const { banner } = assets.images;
 
   return (
-    <Container>
+    <Container className="px-0 md:px-20">
       <div className="w-full">
         {/* Heading */}
         <div className="text-center py-10 sm:py-14 md:py-20">
