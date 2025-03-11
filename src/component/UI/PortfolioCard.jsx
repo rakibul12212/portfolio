@@ -11,7 +11,7 @@ import "swiper/css/free-mode";
 
 const PortfolioCard = () => {
   return (
-    <div className="px-4 sm:px-6 md:px-8 ">
+    <div className="px-0 md:px-20 ">
       <Swiper
         modules={[FreeMode, Navigation]}
         spaceBetween={16}

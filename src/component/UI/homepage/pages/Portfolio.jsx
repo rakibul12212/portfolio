@@ -45,7 +45,9 @@ const Portfolio = () => {
       </Container>
 
       {/* Portfolio Cards */}
-      <PortfolioCard />
+      
+        <PortfolioCard />
+      
     </div>
   );
 };
