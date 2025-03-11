@@ -2,6 +2,7 @@
 
 import Container from "../Container";
 import Banner from "./pages/Banner";
+import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
     <Container className="text-[#FFFFFF]">
       <Banner />
       <Services />
+      <Portfolio />
     </Container>
   );
 };

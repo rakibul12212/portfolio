@@ -91,7 +91,7 @@ const Banner = () => {
           <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8 tracking-wide">
             <div>
               <p className="font-semibold ">Projects Done</p>
-              <p className="text-4xl sm:text-5xl font-semibold pt-2">44</p>
+              <p className="text-4xl sm:text-5xl font-semibold pt-2">30+</p>
             </div>
             <div>
               <p className="font-semibold ">Years of Experience</p>
