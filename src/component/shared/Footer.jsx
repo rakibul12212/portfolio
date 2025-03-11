@@ -1,8 +1,18 @@
 import React from "react";
 import Container from "../UI/Container";
+import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
-  return <Container className="text-[#FFFFFF]">footer</Container>;
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <Container className="text-[#FFFFFF] py-10">
+      <div className="flex items-center justify-center gap-1 tra">
+        <FaRegCopyright />
+        <p className="text-xl">{currentYear} rakib, All Rights Reserved.</p>
+      </div>
+    </Container>
+  );
 };
 
 export default Footer;
