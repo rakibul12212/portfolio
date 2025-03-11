@@ -12,14 +12,18 @@ const Services = () => {
           <span>
             <FaRegCircle size={12} />
           </span>
-          <p className="font-semibold ">SERVICES</p>
+          <p className="text-sm sm:text-base font-semibold">SERVICES</p>
         </div>
-        <p className="text-6xl font-bold tracking-wide">
-          What I
-          <span className="ps-2 text-6xl font-semibold bg-gradient-to-r from-purple-500 to-blue-950 bg-clip-text text-transparent">
-            Do
-          </span>
-        </p>
+
+        {/* Title */}
+        <div>
+          <p className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wide leading-tight">
+            What I
+            <span className="ps-2 text-3xl sm:text-4xl md:text-6xl font-semibold bg-gradient-to-r from-purple-500 to-blue-950 bg-clip-text text-transparent">
+              Do
+            </span>
+          </p>
+        </div>
       </div>
       {/* main content */}
       <div className="pt-10">
