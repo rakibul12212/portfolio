@@ -4,6 +4,7 @@ import { BsDot } from "react-icons/bs";
 import { SlSocialLinkedin, SlSocialGoogle } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
 import Container from "../../Container";
+import './Banner.css'
 
 const Banner = () => {
   const { banner } = assets.images;
@@ -13,7 +14,7 @@ const Banner = () => {
       <div className="w-full">
         {/* Heading */}
         <div className="text-center py-10 sm:py-14 md:py-20">
-          <p className=" font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          <p className="text-outline font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             MD RAKIBUL ISLAM
           </p>
         </div>
