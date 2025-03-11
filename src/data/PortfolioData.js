@@ -3,32 +3,32 @@ import { assets } from "@/assets";
 export const PortfolioData = [
   {
     image: assets.portfolio.p1,
-    texts: ["Web Developer", " frontend technologies"],
-    name: "Alice Johnson",
+    text: "E-Commerce App",
+    name: "FlickMall",
   },
   {
     image: assets.portfolio.p2,
-    texts: ["Graphic Designer", "Loves minimalism"],
-    name: "David Lee",
+    text: "AI Chat Application",
+    name: "EchoGPT",
   },
   {
     image: assets.portfolio.p3,
-    texts: ["Marketing Expert", "Driven "],
-    name: "Sophia Martinez",
+    text: "Online Food Ordering App",
+    name: "Restaurant",
   },
   {
     image: assets.portfolio.p4,
-    texts: ["Full Stack Developer", "Tech enthusiast"],
-    name: "James Brown",
+    text: "Dashboard",
+    name: "Dashboard",
   },
   {
     image: assets.portfolio.p5,
-    texts: ["Full Stack Developer", "Tech enthusiast"],
-    name: "James Brown",
+    text: "Event Management App",
+    name: "Planorama",
   },
   {
     image: assets.portfolio.p6,
-    texts: ["Full Stack Developer", "Tech enthusiast"],
-    name: "James Brown",
+    text: "E-Commerce App",
+    name: "Shopcart",
   },
 ];
