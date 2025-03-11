@@ -1,10 +1,11 @@
+"use client";
 import { assets } from "@/assets";
 import Image from "next/image";
 import { BsDot } from "react-icons/bs";
 import { SlSocialLinkedin, SlSocialGoogle } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
 import Container from "../../Container";
-import './Banner.css'
+import "./Banner.css";
 
 const Banner = () => {
   const { banner } = assets.images;
@@ -59,7 +60,7 @@ const Banner = () => {
 
             {/* Contact Icons */}
             <div>
-              <p className="font-semibold text-lg pb-2">CONTACT</p>
+              <p className="font-semibold text-lg pb-3">CONTACT</p>
               <div className="flex gap-4">
                 {[SlSocialLinkedin, SlSocialGoogle, SiGithub].map(
                   (Icon, idx) => (
@@ -87,18 +88,18 @@ const Banner = () => {
           </div>
 
           {/* Right Section - Stats */}
-          <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8">
+          <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8 tracking-wide">
             <div>
-              <p className="font-semibold tracking-wide">Projects Done</p>
-              <p className="text-4xl sm:text-5xl font-semibold">44</p>
+              <p className="font-semibold ">Projects Done</p>
+              <p className="text-4xl sm:text-5xl font-semibold pt-2">44</p>
             </div>
             <div>
-              <p className="font-semibold tracking-wide">Years of Experience</p>
-              <p className="text-4xl sm:text-5xl font-semibold">13+</p>
+              <p className="font-semibold ">Years of Experience</p>
+              <p className="text-4xl sm:text-5xl font-semibold pt-2">02</p>
             </div>
             <div>
-              <p className="font-semibold tracking-wide">Worldwide Clients</p>
-              <p className="text-4xl sm:text-5xl font-semibold">01</p>
+              <p className="font-semibold ">Worldwide Clients</p>
+              <p className="text-4xl sm:text-5xl font-semibold pt-2">01</p>
             </div>
           </div>
         </div>
