@@ -73,6 +73,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     href="#about"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     ABOUT
@@ -81,6 +82,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     href="#services"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     SERVICES
@@ -89,6 +91,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     href="#portfolio"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     PORTFOLIO
@@ -97,6 +100,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     href="#testimonials"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     TESTIMONIALS
@@ -105,6 +109,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     href="#blog"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     BLOG
@@ -113,6 +118,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     href="#contact"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     CONTACT
