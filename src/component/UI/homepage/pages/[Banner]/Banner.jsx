@@ -91,16 +91,16 @@ const Banner = () => {
           {/* Right Section - Stats */}
           <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8 tracking-wide">
             <div>
-              <p className="font-semibold ">Projects Done</p>
-              <p className="text-4xl sm:text-5xl font-semibold pt-2">30+</p>
+              <p className="font-semibold text-xl">Projects Done</p>
+              <p className="text-4xl sm:text-6xl font-semibold pt-2">30+</p>
             </div>
             <div>
-              <p className="font-semibold ">Years of Experience</p>
-              <p className="text-4xl sm:text-5xl font-semibold pt-2">02</p>
+              <p className="font-semibold text-xl">Years of Experience</p>
+              <p className="text-4xl sm:text-6xl font-semibold pt-2">02</p>
             </div>
             <div>
-              <p className="font-semibold ">Worldwide Clients</p>
-              <p className="text-4xl sm:text-5xl font-semibold pt-2">01</p>
+              <p className="font-semibold text-xl">Worldwide Clients</p>
+              <p className="text-4xl sm:text-6xl font-semibold pt-2">01</p>
             </div>
           </div>
         </div>
