@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "../Container";
+import Achievements from "./pages/Achievements";
 import Banner from "./pages/Banner";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Banner />
       <Services />
       <Portfolio />
+      <Achievements/>
     </Container>
   );
 };
