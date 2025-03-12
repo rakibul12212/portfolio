@@ -4,7 +4,7 @@ import Image from "next/image";
 import { BsDot } from "react-icons/bs";
 import { SlSocialLinkedin, SlSocialGoogle } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
-import Container from "../../Container";
+import Container from "../../[container]/Container";
 import "./Banner.css";
 
 const Banner = () => {

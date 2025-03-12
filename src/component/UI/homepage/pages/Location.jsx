@@ -1,7 +1,7 @@
 "use client";
 
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import Container from "../../Container";
+import Container from "../../[container]/Container";
 
 const containerStyle = {
   width: "100%",

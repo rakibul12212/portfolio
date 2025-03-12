@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../UI/Container";
+import Container from "../UI/[container]/Container";
 import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {

@@ -1,7 +1,7 @@
 "use client";
 import { FaRegCircle } from "react-icons/fa";
-import Container from "../../Container";
-import ServiceCard from "../../ServiceCard";
+import Container from "../../[container]/Container";
+import ServiceCard from "../../[card]/ServiceCard";
 
 const Services = () => {
   return (

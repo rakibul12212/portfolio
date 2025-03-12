@@ -1,6 +1,6 @@
 "use client";
-import Container from "../../Container";
-import PortfolioCard from "../../PortfolioCard";
+import Container from "../../[container]/Container";
+import PortfolioCard from "../../[card]/PortfolioCard";
 import { FaRegCircle } from "react-icons/fa";
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 
@@ -45,9 +45,8 @@ const Portfolio = () => {
       </Container>
 
       {/* Portfolio Cards */}
-      
-        <PortfolioCard />
-      
+
+      <PortfolioCard />
     </div>
   );
 };

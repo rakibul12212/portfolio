@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Container from "../UI/Container";
+import Container from "../UI/[container]/Container";
 import Link from "next/link";
 import { BsDot } from "react-icons/bs";
 
