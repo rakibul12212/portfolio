@@ -12,7 +12,7 @@ export const BlogData = [
     image: assets.portfolio.p2,
     role: "BY ADMIN",
     name: "Integrating AI Chatbots in Frontend Applications",
-    category: "JavaScript / AI",
+    category: "NEXT JS",
     date: "SEP 9",
   },
   {
