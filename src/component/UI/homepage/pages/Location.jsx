@@ -5,7 +5,7 @@ import Container from "../../Container";
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "300px",
 };
 
 const center = {
@@ -15,7 +15,7 @@ const center = {
 
 const Location = () => {
   return (
-    <Container className="px-0 md:px-20 py-20">
+    <div className="pt-20">
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_MAPS_API_KEY}>
         <div className="overflow-hidden rounded-xl">
           <GoogleMap
@@ -27,7 +27,7 @@ const Location = () => {
           </GoogleMap>
         </div>
       </LoadScript>
-    </Container>
+    </div>
   );
 };
 
