@@ -1,6 +1,7 @@
 "use client";
 
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import Container from "../../Container";
 
 const containerStyle = {
   width: "100%",
@@ -14,7 +15,7 @@ const center = {
 
 const Location = () => {
   return (
-    <div className="rounded-xl">
+    <Container className="px-0 md:px-20 py-20">
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_MAPS_API_KEY}>
         <div className="overflow-hidden rounded-xl">
           <GoogleMap
@@ -26,7 +27,7 @@ const Location = () => {
           </GoogleMap>
         </div>
       </LoadScript>
-    </div>
+    </Container>
   );
 };
 

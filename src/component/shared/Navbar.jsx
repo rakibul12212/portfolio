@@ -15,7 +15,7 @@ const Navbar = () => {
     <Container className="text-white bg-black sticky top-0 z-10">
       <div className="flex items-center justify-between py-4">
         <div>
-          <p className="text-3xl font-extrabold">rakib.</p>
+          <p className="text-3xl font-extrabold tracking-wider">rakib.</p>
         </div>
         <div className="space-x-2 md:space-x-6 flex items-center  ps-5 md:ps-0 2xl:ps-0 ">
           <Link href="/">
