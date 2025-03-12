@@ -13,7 +13,7 @@ const Achievements = () => {
             <span>
               <FaRegCircle size={12} />
             </span>
-            <p className="text-sm sm:text-base font-semibold">SERVICES</p>
+            <p className="text-sm sm:text-base font-semibold">ACHIEVEMENTS</p>
           </div>
 
           {/* Title */}
