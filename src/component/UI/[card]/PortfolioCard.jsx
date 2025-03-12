@@ -53,7 +53,7 @@ const PortfolioCard = () => {
                 </div>
 
                 <Link
-                  href="/"
+                  href={item.link}
                   className="text-2xl sm:text-3xl md:text-4xl font-semibold group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                 >
                   {name}
