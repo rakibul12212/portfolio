@@ -1,9 +1,9 @@
 "use client";
-import Container from "../../[container]/Container";
+import Container from "../../../UI/[container]/Container";
 
 import { FaRegCircle } from "react-icons/fa";
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
-import BlogCard from "../../[card]/BlogCard";
+import BlogCard from "../../../UI/[card]/BlogCard";
 
 const Blog = () => {
   return (

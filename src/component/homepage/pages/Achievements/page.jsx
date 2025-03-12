@@ -1,7 +1,7 @@
 "use client";
 import { FaRegCircle } from "react-icons/fa";
-import Container from "../../[container]/Container";
-import AchievementCard from "../../[card]/AchievementCard";
+import Container from "../../../UI/[container]/Container";
+import AchievementCard from "../../../UI/[card]/AchievementCard";
 
 const Achievements = () => {
   return (

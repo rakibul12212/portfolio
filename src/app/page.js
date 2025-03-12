@@ -1,6 +1,6 @@
 "use client";
 
-import HomePage from "@/component/UI/homepage/HomePage";
+import HomePage from "@/component/homepage/HomePage";
 
 const Home = () => {
   return (

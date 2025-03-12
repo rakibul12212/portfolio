@@ -1,6 +1,6 @@
 "use client";
-import Container from "../../[container]/Container";
-import PortfolioCard from "../../[card]/PortfolioCard";
+import PortfolioCard from "@/component/UI/[card]/PortfolioCard";
+import Container from "@/component/UI/[container]/Container";
 import { FaRegCircle } from "react-icons/fa";
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 

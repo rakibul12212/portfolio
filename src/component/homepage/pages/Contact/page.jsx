@@ -1,6 +1,7 @@
 "use client";
-import ContactInputs from "../../[input]/ContactInputs";
-import Container from "../../[container]/Container";
+import Container from "@/component/UI/[container]/Container";
+import ContactInputs from "@/component/UI/[input]/ContactInputs";
+
 import { FaRegCircle } from "react-icons/fa";
 
 const Contact = () => {
