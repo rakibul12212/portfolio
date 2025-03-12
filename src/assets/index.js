@@ -11,4 +11,9 @@ export const assets = {
     p5: "/portfolio/p4.png",
     p6: "/portfolio/p5.png",
   },
+  testimonial: {
+    abir: "/testimonial/abir.jpg",
+    nafsi: "/testimonial/nafsi.jpg",
+    tusher:"/testimonial/tusher.jpg",
+  }
 };

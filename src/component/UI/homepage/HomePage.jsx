@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Location from "./pages/Location";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
+import Testimonial from "./pages/Testimonial";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Services />
       <Portfolio />
       <Achievements />
+      <Testimonial />
       <Blog />
       <Contact />
       <Location />
