@@ -30,17 +30,23 @@ const BlogCard = () => {
         }}
       >
         {BlogData.map((item, index) => {
-          const { image, role, name, date } = item;
+          const { image, role, name, date, category } = item;
           return (
             <SwiperSlide key={index}>
               <div className="rounded-md p-2 text-start">
-                <Image
-                  width={360}
-                  height={320}
-                  src={image}
-                  alt={name}
-                  className="w-full h-60 sm:h-64 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out hover:scale-105"
-                />
+                <div className="relative w-full">
+                  <Image
+                    width={360}
+                    height={320}
+                    src={image}
+                    alt={name}
+                    className="w-full h-60 sm:h-64 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out hover:scale-105"
+                  />
+                  <div className="absolute top-2 right-2 bg-gray-400 bg-opacity-70 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                    {category}
+                  </div>
+                </div>
+
                 <div className="flex flex-wrap items-center gap-4 text-neutral-400 text-md sm:text-md font-semibold pt-4 mb-4">
                   {/* first */}
                   <span className="group relative overflow-hidden inline-block">

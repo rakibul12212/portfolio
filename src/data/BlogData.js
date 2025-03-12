@@ -38,7 +38,7 @@ export const BlogData = [
   },
   {
     image: assets.portfolio.p6,
-    role: "Frontend & API Integration",
+    role: "BY ADMIN",
     name: "Dynamic Product Filtering in E-Commerce Sites",
     category: "JavaScript",
     date: "NOV 11",

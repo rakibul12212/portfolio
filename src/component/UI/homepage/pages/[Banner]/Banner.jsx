@@ -13,7 +13,7 @@ const Banner = () => {
 
   return (
     <Container className="px-0 md:px-20">
-      <div className="w-full max-h-screen">
+      <div className="w-full ">
         {/* Heading */}
         <div className="text-center py-10  md:py-10">
           <p className="text-outline font-bold text-3xl  md:text-7xl 2xl:text-8xl">
