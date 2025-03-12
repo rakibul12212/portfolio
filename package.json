@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "@react-google-maps/api": "^2.20.6",
     "motion": "^12.4.10",
     "next": "^15.2.1",
     "react": "^19.0.0",

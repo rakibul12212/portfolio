@@ -3,6 +3,7 @@
 import Container from "../Container";
 import Achievements from "./pages/Achievements";
 import Banner from "./pages/Banner";
+import Location from "./pages/location";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 
@@ -12,7 +13,8 @@ const HomePage = () => {
       <Banner />
       <Services />
       <Portfolio />
-      <Achievements/>
+      <Achievements />
+      <Location />
     </Container>
   );
 };
