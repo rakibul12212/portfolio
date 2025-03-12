@@ -26,101 +26,103 @@ const Banner = () => {
   ];
 
   return (
-    <Container className="px-0 md:px-20">
-      <div className="w-full ">
-        {/* Heading */}
-        <div className="text-center py-10  md:py-10">
-          <p className="text-outline font-bold text-3xl  md:text-7xl 2xl:text-8xl">
-            MD RAKIBUL ISLAM
-          </p>
-        </div>
+    <section id="about">
+      <Container className="px-0 md:px-20">
+        <div className="w-full ">
+          {/* Heading */}
+          <div className="text-center py-10  md:py-10">
+            <p className="text-outline font-bold text-3xl  md:text-7xl 2xl:text-8xl">
+              MD RAKIBUL ISLAM
+            </p>
+          </div>
 
-        {/* Main Content Grid */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10">
-          {/* Left Section - Bio, Skills, Contact */}
-          <div className="w-full lg:w-1/3 space-y-6">
-            {/* Bio */}
-            <div>
-              <p className="font-semibold text-lg">BIOGRAPHY</p>
-              <p className="text-neutral-400 pt-2">
-                Innovative Frontend Developer building sleek, responsive UIs
-                with React, Tailwind, and TypeScript. Passionate about creating
-                smooth, user-first digital experiences. Always staying ahead of
-                the latest trends.
-              </p>
-            </div>
+          {/* Main Content Grid */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10">
+            {/* Left Section - Bio, Skills, Contact */}
+            <div className="w-full lg:w-1/3 space-y-6">
+              {/* Bio */}
+              <div>
+                <p className="font-semibold text-lg">BIOGRAPHY</p>
+                <p className="text-neutral-400 pt-2">
+                  Innovative Frontend Developer building sleek, responsive UIs
+                  with Next Js, React, Tailwind, and javaScript. Passionate
+                  about creating smooth, user-first digital experiences. Always
+                  staying ahead of the latest trends.
+                </p>
+              </div>
 
-            {/* Skills */}
-            <div>
-              <p className="font-semibold text-lg">SKILLS</p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 pt-2 text-neutral-400">
-                {[
-                  "React js",
-                  "Next js",
-                  "JavaScript",
-                  "TypeScript",
-                  "Express js",
-                  "Node js",
-                  "HTML",
-                  "CSS",
-                  "Git",
-                  "REST API",
-                ].map((skill, idx) => (
-                  <p key={idx} className="flex items-center text-sm">
-                    <BsDot size={24} /> {skill}
-                  </p>
-                ))}
+              {/* Skills */}
+              <div>
+                <p className="font-semibold text-lg">SKILLS</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 pt-2 text-neutral-400">
+                  {[
+                    "React js",
+                    "Next js",
+                    "JavaScript",
+                    "TypeScript",
+                    "Express js",
+                    "Node js",
+                    "HTML",
+                    "CSS",
+                    "Git",
+                    "REST API",
+                  ].map((skill, idx) => (
+                    <p key={idx} className="flex items-center text-sm">
+                      <BsDot size={24} /> {skill}
+                    </p>
+                  ))}
+                </div>
+              </div>
+
+              {/* Contact Icons */}
+              <div>
+                <p className="font-semibold text-lg pb-3">CONTACT</p>
+                <div className="flex gap-4">
+                  {socialLinks.map((item, idx) => (
+                    <a
+                      key={idx}
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-neutral-700 text-white rounded-full flex items-center justify-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform hover:scale-110"
+                    >
+                      <item.icon size={20} />
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Contact Icons */}
-            <div>
-              <p className="font-semibold text-lg pb-3">CONTACT</p>
-              <div className="flex gap-4">
-                {socialLinks.map((item, idx) => (
-                  <a
-                    key={idx}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-neutral-700 text-white rounded-full flex items-center justify-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform hover:scale-110"
-                  >
-                    <item.icon size={20} />
-                  </a>
-                ))}
+            {/* Middle Section - Image */}
+            <div className="w-full lg:w-1/3 flex justify-center">
+              <Image
+                src={banner}
+                alt="banner"
+                width={300}
+                height={300}
+                className="rounded-full w-48 sm:w-64 md:w-72 lg:w-80 h-auto object-cover"
+              />
+            </div>
+
+            {/* Right Section - Stats */}
+            <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8 tracking-wide">
+              <div>
+                <p className="font-semibold text-xl">Projects Done</p>
+                <p className="text-4xl sm:text-6xl font-semibold pt-2">30+</p>
+              </div>
+              <div>
+                <p className="font-semibold text-xl">Years of Experience</p>
+                <p className="text-4xl sm:text-6xl font-semibold pt-2">02</p>
+              </div>
+              <div>
+                <p className="font-semibold text-xl">Worldwide Clients</p>
+                <p className="text-4xl sm:text-6xl font-semibold pt-2">01</p>
               </div>
             </div>
           </div>
-
-          {/* Middle Section - Image */}
-          <div className="w-full lg:w-1/3 flex justify-center">
-            <Image
-              src={banner}
-              alt="banner"
-              width={300}
-              height={300}
-              className="rounded-full w-48 sm:w-64 md:w-72 lg:w-80 h-auto object-cover"
-            />
-          </div>
-
-          {/* Right Section - Stats */}
-          <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8 tracking-wide">
-            <div>
-              <p className="font-semibold text-xl">Projects Done</p>
-              <p className="text-4xl sm:text-6xl font-semibold pt-2">30+</p>
-            </div>
-            <div>
-              <p className="font-semibold text-xl">Years of Experience</p>
-              <p className="text-4xl sm:text-6xl font-semibold pt-2">02</p>
-            </div>
-            <div>
-              <p className="font-semibold text-xl">Worldwide Clients</p>
-              <p className="text-4xl sm:text-6xl font-semibold pt-2">01</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

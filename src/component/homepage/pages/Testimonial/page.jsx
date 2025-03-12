@@ -6,9 +6,11 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-     <Container className="px-4 md:px-10 lg:px-16  2xl:px-10 pt-20 py-10">
-      <TestimonialCard />
-    </Container>
+    <section id="testimonials">
+      <Container className="px-4 md:px-10 lg:px-16  2xl:px-10 pt-20 py-10">
+        <TestimonialCard />
+      </Container>
+    </section>
   );
 };
 
