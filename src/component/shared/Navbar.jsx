@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <Container className="text-white sticky top-0 z-10">
+    <Container className="text-white bg-black sticky top-0 z-10">
       <div className="flex items-center justify-between py-4">
         <div>
           <p className="text-3xl font-extrabold">rakib.</p>
