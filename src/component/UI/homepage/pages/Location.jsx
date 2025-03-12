@@ -15,7 +15,7 @@ const center = {
 const Location = () => {
   return (
     <div className="rounded-xl">
-      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_MapsApiKey}>
+      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_MAPS_API_KEY}>
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
           <Marker position={center} />
         </GoogleMap>
