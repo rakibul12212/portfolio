@@ -3,7 +3,7 @@
 import Container from "../Container";
 import Achievements from "./pages/Achievements";
 import Banner from "./pages/Banner";
-import Location from "./pages/location";
+import Location from "./pages/Location";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 
