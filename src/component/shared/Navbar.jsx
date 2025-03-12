@@ -14,7 +14,9 @@ const Navbar = () => {
       <div className="flex items-center justify-between py-4 relative">
         {/* Logo */}
         <div>
-          <Link href='/' className="text-3xl font-extrabold tracking-wider">rakib.</Link>
+          <Link href="/" className="text-3xl font-extrabold tracking-wider">
+            rakib.
+          </Link>
         </div>
 
         {/* Right Buttons */}
@@ -23,14 +25,14 @@ const Navbar = () => {
           <Link href="#contact">
             <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
               <span className="relative overflow-hidden">
-                <span className="block font-semibold transition-all duration-300 group-hover:-translate-y-full">
+                <span className=" block font-semibold transition-all duration-300 group-hover:-translate-y-full">
                   LET'S TALK
                 </span>
-                <span className="absolute top-0 left-0 w-full block font-semibold translate-y-full group-hover:translate-y-0 transition-all duration-300">
+                <span className=" absolute top-0 left-0 w-full block font-semibold translate-y-full group-hover:translate-y-0 transition-all duration-300">
                   LET'S TALK
                 </span>
               </span>
-              <span className="transition-all duration-300 transform group-hover:scale-200 group-hover:text-neutral-500">
+              <span className="hidden md:block 2xl:block transition-all duration-300 transform group-hover:scale-200 group-hover:text-neutral-500">
                 <BsDot size={30} />
               </span>
             </button>
@@ -57,7 +59,7 @@ const Navbar = () => {
                 {isMenuOpen ? "CLOSE" : "MENU"}
               </span>
             </span>
-            <span className="transition-all duration-300 transform group-hover:scale-200 group-hover:text-neutral-500">
+            <span className="hidden md:block 2xl:block transition-all duration-300 transform group-hover:scale-200 group-hover:text-neutral-500">
               <BsDot size={30} />
             </span>
           </button>
