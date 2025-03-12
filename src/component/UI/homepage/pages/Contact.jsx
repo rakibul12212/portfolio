@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="flex flex-col md:flex-row justify-between gap-y-8 md:gap-y-0 md:pr-20 lg:pr-48 2xl:pr-80 py-10">
+      <div className="flex flex-col md:flex-row justify-between gap-y-8 md:gap-y-0 md:pr-64 2xl:pr-96 py-10">
         <div>
           <p className="text-sm sm:text-base font-semibold tracking-wider">
             EMAIL :
