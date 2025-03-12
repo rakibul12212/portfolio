@@ -4,6 +4,7 @@ import Container from "../Container";
 import Achievements from "./pages/Achievements";
 import Banner from "./pages/Banner";
 import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 import Location from "./pages/Location";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
@@ -15,7 +16,8 @@ const HomePage = () => {
       <Services />
       <Portfolio />
       <Achievements />
-      <Blog/>
+      <Blog />
+      <Contact />
       <Location />
     </Container>
   );
