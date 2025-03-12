@@ -7,21 +7,23 @@ import { BsDot } from "react-icons/bs";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <Container className="text-white bg-black sticky top-0 z-10">
-      <div className="flex items-center justify-between py-4">
+    <Container className="text-white bg-black sticky top-0 z-50">
+      <div className="flex items-center justify-between py-4 relative">
+        {/* Logo */}
         <div>
           <p className="text-3xl font-extrabold tracking-wider">rakib.</p>
         </div>
-        <div className="space-x-2 md:space-x-6 flex items-center  ps-5 md:ps-0 2xl:ps-0 ">
+
+        {/* Right Buttons */}
+        <div className="flex items-center space-x-2 md:space-x-6 ps-5 md:ps-0">
+          {/* Let's Talk Button */}
           <Link href="/">
-            <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center  hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
+            <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
               <span className="relative overflow-hidden">
-                <span className="block font-semibold transition-all duration-300 group-hover:font-semibold translate-y-0 group-hover:-translate-y-[100%]">
+                <span className="block font-semibold transition-all duration-300 group-hover:-translate-y-full">
                   LET'S TALK
                 </span>
                 <span className="absolute top-0 left-0 w-full block font-semibold translate-y-full group-hover:translate-y-0 transition-all duration-300">
@@ -34,78 +36,73 @@ const Navbar = () => {
             </button>
           </Link>
 
+          {/* Menu Toggle Button */}
           <button
             onClick={toggleMenu}
-            className="group bg-white text-black px-3 py-1 rounded-full flex items-center  transition-all duration-300"
+            className="group bg-white text-black px-3 py-1 rounded-full flex items-center transition-all duration-300"
           >
             <span className="relative overflow-hidden">
-              {/* Default text that animates on click */}
               <span
                 className={`block font-semibold transition-all duration-300 ${
-                  isMenuOpen ? "translate-y-[-100%]" : "translate-y-0"
+                  isMenuOpen ? "-translate-y-full" : "translate-y-0"
                 }`}
               >
                 {isMenuOpen ? "CLOSE" : "MENU"}
               </span>
-
-              {/* Text that appears after animation */}
               <span
                 className={`absolute top-0 left-0 w-full block font-semibold transition-all duration-300 ${
-                  isMenuOpen ? "translate-y-0" : "translate-y-[100%]"
+                  isMenuOpen ? "translate-y-0" : "translate-y-full"
                 }`}
               >
                 {isMenuOpen ? "CLOSE" : "MENU"}
               </span>
             </span>
-            <span>
-              <BsDot
-                size={30}
-                className="transition-all duration-300 transform group-hover:scale-200 group-hover:text-neutral-500"
-              />
+            <span className="transition-all duration-300 transform group-hover:scale-200 group-hover:text-neutral-500">
+              <BsDot size={30} />
             </span>
           </button>
         </div>
-      </div>
 
-      {/* Toggleable Menu Section */}
-      {isMenuOpen && (
-        <div className="bg-gradient-to-r from-purple-500/40 to-blue-500/40 opacity-70 backdrop-grayscale-200 w-[300px] ml-auto rounded-xl">
-          <div className=" p-8">
-            <ul className="space-y-5  ">
-              <li>
-                <Link href="/" className="block hover:underline">
-                  ABOUT
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="block hover:underline">
-                  SERVICES
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="block hover:underline">
-                  PORTFOLIO
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="block hover:underline">
-                  TESTIMONIALS
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="block hover:underline">
-                  BLOG
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="block hover:underline">
-                  CONTACT
-                </Link>
-              </li>
-            </ul>
+        {/* Toggleable Menu Floating (absolute positioned) */}
+        {isMenuOpen && (
+          <div className="absolute top-full right-0 mt-2 w-[300px] bg-gradient-to-r from-purple-900 to-blue-900 rounded-xl z-50 shadow-lg md:opacity-70 opacity-100 md:backdrop-grayscale-200 backdrop-none">
+            <div className="p-8">
+              <ul className="space-y-5 text-white font-medium">
+                <li>
+                  <Link href="/" className="block hover:underline">
+                    ABOUT
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="block hover:underline">
+                    SERVICES
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services" className="block hover:underline">
+                    PORTFOLIO
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="block hover:underline">
+                    TESTIMONIALS
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="block hover:underline">
+                    BLOG
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="block hover:underline">
+                    CONTACT
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </Container>
   );
 };
