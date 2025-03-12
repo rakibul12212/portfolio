@@ -4,12 +4,26 @@ import Image from "next/image";
 import { BsDot } from "react-icons/bs";
 import { SlSocialLinkedin, SlSocialGoogle } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
-
 import "./Banner.css";
 import Container from "@/component/UI/[container]/Container";
 
 const Banner = () => {
   const { banner } = assets.images;
+
+  const socialLinks = [
+    {
+      icon: SlSocialLinkedin,
+      url: "https://www.linkedin.com/in/md-rakibul-islam-36582620b/",
+    },
+    {
+      icon: SlSocialGoogle,
+      url: "mailto:rakibulislamr83@gmail.com", // Or link to Google profile
+    },
+    {
+      icon: SiGithub,
+      url: "https://github.com/rakibul12212",
+    },
+  ];
 
   return (
     <Container className="px-0 md:px-20">
@@ -63,16 +77,17 @@ const Banner = () => {
             <div>
               <p className="font-semibold text-lg pb-3">CONTACT</p>
               <div className="flex gap-4">
-                {[SlSocialLinkedin, SlSocialGoogle, SiGithub].map(
-                  (Icon, idx) => (
-                    <div
-                      key={idx}
-                      className="p-2 bg-neutral-700 text-white rounded-full flex items-center justify-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform hover:scale-110"
-                    >
-                      <Icon size={20} />
-                    </div>
-                  )
-                )}
+                {socialLinks.map((item, idx) => (
+                  <a
+                    key={idx}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-neutral-700 text-white rounded-full flex items-center justify-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform hover:scale-110"
+                  >
+                    <item.icon size={20} />
+                  </a>
+                ))}
               </div>
             </div>
           </div>

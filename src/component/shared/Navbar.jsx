@@ -20,7 +20,7 @@ const Navbar = () => {
         {/* Right Buttons */}
         <div className="flex items-center space-x-2 md:space-x-6 ps-5 md:ps-0">
           {/* Let's Talk Button */}
-          <Link href="/">
+          <Link href="/contact">
             <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
               <span className="relative overflow-hidden">
                 <span className="block font-semibold transition-all duration-300 group-hover:-translate-y-full">
@@ -69,32 +69,32 @@ const Navbar = () => {
             <div className="p-8">
               <ul className="space-y-5 text-white font-medium">
                 <li>
-                  <Link href="/" className="block hover:underline">
+                  <Link href="/" className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
                     ABOUT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="block hover:underline">
+                  <Link href="/about" className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
                     SERVICES
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="block hover:underline">
+                  <Link href="/services" className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
                     PORTFOLIO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="block hover:underline">
+                  <Link href="/contact" className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
                     TESTIMONIALS
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="block hover:underline">
+                  <Link href="/contact" className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
                     BLOG
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="block hover:underline">
+                  <Link href="/contact" className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
                     CONTACT
                   </Link>
                 </li>

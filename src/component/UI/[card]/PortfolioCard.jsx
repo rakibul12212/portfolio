@@ -8,6 +8,7 @@ import { FreeMode, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
+import Link from "next/link";
 
 const PortfolioCard = () => {
   return (
@@ -51,9 +52,12 @@ const PortfolioCard = () => {
                   </span>
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1">
+                <Link
+                  href="/"
+                  className="text-2xl sm:text-3xl md:text-4xl font-semibold group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
+                >
                   {name}
-                </h2>
+                </Link>
               </div>
             </SwiperSlide>
           );
