@@ -6,20 +6,20 @@ export const TestimonialData = [
     role: "MOTION DESIGNER",
     image: assets.testimonial.tusher, // Replace with your image link
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "If you're looking for someone who can bring your design to life and make it better than you imagined—this is the dev you need.",
   },
   {
     name: "AFRID BIN NAFSI",
     role: "Digital Marketing Specialist",
     image: assets.testimonial.nafsi,
     quote:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Working with Rakib was a seamless experience. Their ability to translate complex UI/UX requirements into intuitive and elegant interfaces is outstanding.",
   },
   {
     name: "ABIDUR RAHMAN",
     role: "Virtual Assistant",
     image: assets.testimonial.abir,
     quote:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "An exceptionally skilled front-end developer with a sharp eye for detail and a deep understanding of responsive, user-friendly design. Always delivers clean, efficient, and maintainable code.",
   },
 ];

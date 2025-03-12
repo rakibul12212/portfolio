@@ -28,9 +28,9 @@ const Portfolio = () => {
 
         {/* Description */}
         <p className="text-sm sm:text-base text-neutral-400 pt-2 max-w-full md:max-w-[500px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation.
+          Here are some of the projects I’ve designed and developed. From
+          landing pages to full web applications, each one is built with modern
+          tools, clean code, and a focus on great user experience.
         </p>
 
         {/* Navigation Buttons */}

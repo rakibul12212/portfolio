@@ -40,7 +40,7 @@ const BlogCard = () => {
                     height={320}
                     src={image}
                     alt={name}
-                    className="w-full h-60 sm:h-64 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out hover:scale-105"
+                    className="w-full h-60 sm:h-64 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out "
                   />
                   <div className="absolute top-4 right-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm font-semibold px-4 py-1 rounded-full">
                     {category}

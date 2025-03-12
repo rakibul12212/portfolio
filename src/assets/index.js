@@ -14,6 +14,14 @@ export const assets = {
   testimonial: {
     abir: "/testimonial/abir.jpg",
     nafsi: "/testimonial/nafsi.jpg",
-    tusher:"/testimonial/tusher.jpg",
-  }
+    tusher: "/testimonial/tusher.jpg",
+  },
+  blog: {
+    react: "/blog/react.webp",
+    js: "/blog/js.webp",
+    next: "/blog/next.webp",
+    dashboard: "/blog/dashboard.webp",
+    ui: "/blog/ui.webp",
+    html: "/blog/html.webp",
+  },
 };
