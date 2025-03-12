@@ -105,7 +105,7 @@ const Banner = () => {
             </div>
 
             {/* Right Section - Stats */}
-            <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-8 lg:space-x-0 lg:space-y-8 tracking-wide">
+            <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-6 lg:space-x-0 lg:space-y-8 sm:tracking-normal md:tracking-wide">
               <div>
                 <p className="font-semibold text-xl">Projects Done</p>
                 <p className="text-4xl sm:text-6xl font-semibold pt-2">30+</p>
