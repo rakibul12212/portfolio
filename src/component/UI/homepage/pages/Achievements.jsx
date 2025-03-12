@@ -5,7 +5,7 @@ import AchievementCard from "../../[card]/AchievementCard";
 
 const Achievements = () => {
   return (
-    <Container className="px-0 md:px-20 py-20">
+    <Container className="px-0 md:px-20 pt-20">
       {/* head */}
       <div>
         <div>

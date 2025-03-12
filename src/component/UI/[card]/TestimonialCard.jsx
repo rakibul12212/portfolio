@@ -8,7 +8,7 @@ import { TestimonialData } from "@/data/TestimonialData";
 
 const TestimonialCard = () => {
   return (
-    <div className="bg-black text-white px-6 py-12">
+    <div className="bg-black text-white px-6 py-4">
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 5000 }}
