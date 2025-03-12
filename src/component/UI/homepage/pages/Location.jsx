@@ -15,7 +15,13 @@ const center = {
 const Location = () => {
   return (
     <div>
-      <LoadScript googleMapsApiKey={process.env.MapsApiKey}>
+      <div>
+        <p className="text-white">map</p>
+      </div>
+      <LoadScript
+        googleMapsApiKey={process.env.NEXT_PUBLIC_MapsApiKey}
+        className="rounded-xl"
+      >
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
           <Marker position={center} />
         </GoogleMap>
