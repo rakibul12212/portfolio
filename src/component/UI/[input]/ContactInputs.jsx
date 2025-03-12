@@ -1,31 +1,31 @@
-import React from "react";
+'use client'
 import { BsDot } from "react-icons/bs";
 
 const ContactInputs = () => {
   return (
-    <div class=" bg-black  flex items-center ">
-      <form class="w-full max-w-8xl space-y-4">
-        <div class="flex flex-col md:flex-row gap-4">
+    <div className=" bg-black  flex items-center ">
+      <form className="w-full max-w-8xl space-y-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <input
             type="text"
             placeholder="Name"
-            class="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
+            className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
           />
           <input
             type="email"
             placeholder="E-Mail"
-            class="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
+            className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
           />
         </div>
         <input
           type="text"
           placeholder="Subject"
-          class="w-full bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
+          className="w-full bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
         />
         <textarea
           rows="6"
           placeholder="Message"
-          class="w-full bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none resize-none"
+          className="w-full bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none resize-none"
         ></textarea>
 
         <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center  hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">

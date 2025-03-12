@@ -4,8 +4,9 @@ import Image from "next/image";
 import { BsDot } from "react-icons/bs";
 import { SlSocialLinkedin, SlSocialGoogle } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
-import Container from "../../[container]/Container";
+
 import "./Banner.css";
+import Container from "@/component/UI/[container]/Container";
 
 const Banner = () => {
   const { banner } = assets.images;

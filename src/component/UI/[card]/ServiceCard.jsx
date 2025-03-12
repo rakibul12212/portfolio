@@ -1,3 +1,4 @@
+"use client";
 import { ServiceData } from "@/data/ServiceData";
 import { getServiceIcon } from "@/utils/getServiceIcon";
 import React from "react";

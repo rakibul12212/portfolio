@@ -1,3 +1,4 @@
+"use client";
 import { AchievementData } from "@/data/AchievementData";
 import React from "react";
 

@@ -1,8 +1,7 @@
 "use client";
-
 import Container from "../[container]/Container";
+import Banner from "./pages/[Banner]/Banner";
 import Achievements from "./pages/Achievements";
-import Banner from "./pages/Banner";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Location from "./pages/Location";
