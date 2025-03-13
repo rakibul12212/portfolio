@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Right Buttons */}
         <div className="flex items-center space-x-2 md:space-x-6 ps-5 md:ps-0">
           {/* Let's Talk Button */}
-          <Link href="#contact">
+          <Link href="/#contact">
             <button className="group bg-neutral-700 text-white px-3 py-1 rounded-full flex items-center hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300 transform group-hover:scale-110">
               <span className="relative overflow-hidden">
                 <span className=" block font-semibold transition-all duration-300 group-hover:-translate-y-full">
