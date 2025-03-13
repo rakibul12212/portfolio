@@ -15,13 +15,21 @@ const ContactInputs = () => {
     const useremail = form.current.email.value.trim();
     const usermessage = form.current.message.value.trim();
 
-    // Basic validation
     if (!username || !useremail || !usermessage) {
       toast.error("Please fill in all required fields.");
       return;
     }
 
     setLoading(true);
+
+    // Optional debug
+    console.log("Sending Data:", {
+      name: username,
+      email: useremail,
+      subject: form.current.subject.value,
+      message: usermessage,
+      time: new Date().toLocaleString(),
+    });
 
     emailjs
       .sendForm(
