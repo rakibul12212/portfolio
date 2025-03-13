@@ -11,12 +11,12 @@ const ContactInputs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const name = form.current.name.value.trim();
-    const email = form.current.email.value.trim();
-    const message = form.current.message.value.trim();
+    const username = form.current.name.value.trim();
+    const useremail = form.current.email.value.trim();
+    const usermessage = form.current.message.value.trim();
 
     // Basic validation
-    if (!name || !email || !message) {
+    if (!username || !useremail || !usermessage) {
       toast.error("Please fill in all required fields.");
       return;
     }
