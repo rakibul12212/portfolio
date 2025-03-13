@@ -52,14 +52,14 @@ const ContactInputs = () => {
         <div className="flex flex-col md:flex-row gap-4">
           <input
             type="text"
-            name="name"
+            name="user_name"
             placeholder="Name"
             className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
             required
           />
           <input
             type="email"
-            name="email"
+            name="user_email"
             placeholder="E-Mail"
             className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
             required
@@ -115,7 +115,7 @@ const ContactInputs = () => {
               Sending...
             </span>
           ) : (
-            <>
+            <div className="flex items-center">
               <span className="relative overflow-hidden">
                 <span className="block transition-all group-hover:-translate-y-full">
                   SEND MESSAGE
@@ -127,7 +127,7 @@ const ContactInputs = () => {
               <span className="transition-all transform group-hover:scale-200 group-hover:text-neutral-500">
                 <BsDot size={30} />
               </span>
-            </>
+            </div>
           )}
         </button>
       </form>
