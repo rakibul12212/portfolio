@@ -8,15 +8,24 @@ const ContactInputs = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
 
+  // ✅ Controlled inputs state
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form.current);
-    const name = formData.get("name").trim();
-    const email = formData.get("email").trim();
-    const message = formData.get("message").trim();
-
-    if (!name || !email || !message) {
+    const { name, email, message } = formData;
+    if (!name.trim() || !email.trim() || !message.trim()) {
       toast.error("Please fill in all required fields.");
       return;
     }
@@ -35,6 +44,7 @@ const ContactInputs = () => {
       .then(() => {
         toast.success("Message sent successfully!");
         form.current.reset();
+        setFormData({ name: "", email: "", subject: "", message: "" });
       })
       .catch((error) => {
         console.error("Email send error:", error);
@@ -55,14 +65,20 @@ const ContactInputs = () => {
           <input
             type="text"
             name="name"
+            value={formData.name}
+            onChange={handleChange}
             placeholder="Name"
+            autoComplete="name"
             className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
             required
           />
           <input
             type="email"
             name="email"
+            value={formData.email}
+            onChange={handleChange}
             placeholder="E-Mail"
+            autoComplete="email"
             className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
             required
           />
@@ -70,17 +86,20 @@ const ContactInputs = () => {
         <input
           type="text"
           name="subject"
+          value={formData.subject}
+          onChange={handleChange}
           placeholder="Subject"
           className="w-full bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
         />
         <textarea
           name="message"
           rows="6"
+          value={formData.message}
+          onChange={handleChange}
           placeholder="Message"
           className="w-full bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none resize-none"
           required
-        ></textarea>
-
+        />
         <input type="hidden" name="time" value={new Date().toLocaleString()} />
 
         <button
