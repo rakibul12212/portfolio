@@ -1,7 +1,7 @@
 "use client";
+
 import Container from "@/component/UI/[container]/Container";
 import ContactInputs from "@/component/UI/[input]/ContactInputs";
-
 import { FaRegCircle } from "react-icons/fa";
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
               EMAIL :
             </p>
             <p className="text-2xl sm:text-3xl font-semibold pt-2">
-              contact@flatheme.net
+              rakibulislamr83@gmail.com
             </p>
           </div>
           <div>
@@ -41,7 +41,7 @@ const Contact = () => {
               CALL :
             </p>
             <p className="text-2xl sm:text-3xl font-semibold pt-2">
-              +123 456 7890
+              +880 17954 00372
             </p>
           </div>
         </div>
@@ -54,3 +54,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
