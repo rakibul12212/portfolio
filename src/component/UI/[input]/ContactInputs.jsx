@@ -11,8 +11,8 @@ const ContactInputs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const name = form.current.user_name.value.trim();
-    const email = form.current.user_email.value.trim();
+    const name = form.current.name.value.trim();
+    const email = form.current.email.value.trim();
     const message = form.current.message.value.trim();
 
     // Basic validation
@@ -52,14 +52,14 @@ const ContactInputs = () => {
         <div className="flex flex-col md:flex-row gap-4">
           <input
             type="text"
-            name="user_name"
+            name="name"
             placeholder="Name"
             className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
             required
           />
           <input
             type="email"
-            name="user_email"
+            name="email"
             placeholder="E-Mail"
             className="w-full md:w-1/2 bg-[#141618] text-gray-300 placeholder-gray-400 p-4 rounded-lg focus:outline-none"
             required
