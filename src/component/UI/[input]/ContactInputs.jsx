@@ -11,33 +11,27 @@ const ContactInputs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const username = form.current.name.value.trim();
-    const useremail = form.current.email.value.trim();
-    const usermessage = form.current.message.value.trim();
+    const formData = new FormData(form.current);
+    const name = formData.get("name").trim();
+    const email = formData.get("email").trim();
+    const message = formData.get("message").trim();
 
-    if (!username || !useremail || !usermessage) {
+    if (!name || !email || !message) {
       toast.error("Please fill in all required fields.");
       return;
     }
 
     setLoading(true);
 
-    // Optional debug
-    console.log("Sending Data:", {
-      name: username,
-      email: useremail,
-      subject: form.current.subject.value,
-      message: usermessage,
-      time: new Date().toLocaleString(),
-    });
+    const serviceID =
+      process.env.NEXT_PUBLIC_Service_ID || "your_fallback_service_id";
+    const templateID =
+      process.env.NEXT_PUBLIC_template_ID || "your_fallback_template_id";
+    const publicKey =
+      process.env.NEXT_PUBLIC_Public_Key || "your_fallback_public_key";
 
     emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_Service_ID,
-        process.env.NEXT_PUBLIC_template_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_Public_Key
-      )
+      .sendForm(serviceID, templateID, form.current, publicKey)
       .then(() => {
         toast.success("Message sent successfully!");
         form.current.reset();
@@ -87,7 +81,6 @@ const ContactInputs = () => {
           required
         ></textarea>
 
-        {/* Hidden input for timestamp */}
         <input type="hidden" name="time" value={new Date().toLocaleString()} />
 
         <button
