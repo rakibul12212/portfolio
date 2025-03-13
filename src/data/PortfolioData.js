@@ -9,6 +9,8 @@ export const PortfolioData = [
     page: "/portfolio",
     github: "https://github.com/rakibul12212/flickmall",
     demo: "https://flickmall.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
   },
   {
     id: "EchoGPT",
@@ -18,6 +20,8 @@ export const PortfolioData = [
     page: "/portfolio",
     github: "https://github.com/rakibul12212/ecogpt",
     demo: "https://ecogpt.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
   },
   {
     id: "Restaurant",
@@ -27,6 +31,8 @@ export const PortfolioData = [
     page: "/portfolio",
     github: "https://github.com/rakibul12212/restaurant/",
     demo: "https://restaurant-sandy-omega.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
   },
   {
     id: "Dashboard",
@@ -36,6 +42,8 @@ export const PortfolioData = [
     page: "/portfolio",
     github: "https://github.com/rakibul12212/Dashboard",
     demo: "https://frontend-task-six-xi.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
   },
   {
     id: "Planorama",
@@ -45,6 +53,8 @@ export const PortfolioData = [
     page: "/portfolio",
     github: "https://github.com/rakibul12212/planoroma-client",
     demo: "https://planoroma-client.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
   },
   {
     id: "Shopcart",
@@ -54,5 +64,7 @@ export const PortfolioData = [
     page: "/portfolio",
     github: "https://github.com/rakibul12212/shopcart",
     demo: "https://shopcart-red.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
   },
 ];
