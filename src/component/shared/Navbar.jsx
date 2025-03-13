@@ -72,7 +72,7 @@ const Navbar = () => {
               <ul className="space-y-5 text-white font-medium">
                 <li>
                   <Link
-                    href="#about"
+                    href="/#about"
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="#services"
+                    href="/#services"
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
@@ -90,7 +90,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="#portfolio"
+                    href="/#portfolio"
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
@@ -99,7 +99,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="#testimonials"
+                    href="/#testimonials"
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
@@ -108,7 +108,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="#blog"
+                    href="/#blog"
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
@@ -117,7 +117,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="#contact"
+                    href="/#contact"
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
