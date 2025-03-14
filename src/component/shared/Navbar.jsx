@@ -128,6 +128,7 @@ const Navbar = () => {
                   <a
                     href="/cv/Md-rakibul-islam-resume.pdf"
                     download
+                    onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
                   >
                     DOWNLOAD CV
