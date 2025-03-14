@@ -9,7 +9,6 @@ import Portfolio from "./pages/Portfolio/page";
 import Services from "./pages/Services/page";
 import Testimonial from "./pages/Testimonial/page";
 
-
 const HomePage = () => {
   return (
     <Container className="text-[#FFFFFF]">

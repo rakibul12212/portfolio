@@ -124,6 +124,15 @@ const Navbar = () => {
                     CONTACT
                   </Link>
                 </li>
+                <li>
+                  <a
+                    href="/cv/Md-rakibul-islam-resume.pdf"
+                    download
+                    className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
+                  >
+                    DOWNLOAD CV
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
