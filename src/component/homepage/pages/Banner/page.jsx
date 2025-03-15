@@ -98,9 +98,9 @@ const Banner = () => {
               <Image
                 src={banner}
                 alt="banner"
-                width={300}
-                height={300}
-                className="rounded-full w-48 sm:w-64 md:w-72 lg:w-80 h-auto object-cover"
+                width={500}
+                height={500}
+                className="rounded-md w-48 sm:w-64 md:w-72 lg:w-80 h-auto object-cover"
               />
             </div>
 

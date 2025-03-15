@@ -5,11 +5,11 @@ export const assets = {
   },
   portfolio: {
     p1: "/portfolio/p1.jpg",
-    p2: "/portfolio/p6.png",
-    p3: "/portfolio/p2.png",
-    p4: "/portfolio/p3.png",
-    p5: "/portfolio/p4.png",
-    p6: "/portfolio/p5.png",
+    p2: "/portfolio/p2.jpg",
+    p3: "/portfolio/p3.jpg",
+    p4: "/portfolio/p4.jpg",
+    p5: "/portfolio/p5.jpg",
+    p6: "/portfolio/p6.jpg",
   },
   testimonial: {
     abir: "/testimonial/abir.jpg",
