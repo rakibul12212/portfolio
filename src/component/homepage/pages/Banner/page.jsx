@@ -6,6 +6,17 @@ import { SlSocialLinkedin, SlSocialGoogle } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
 import "./Banner.css";
 import Container from "@/component/UI/[container]/Container";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.6 },
+  }),
+};
 
 const Banner = () => {
   const { banner } = assets.images;
@@ -31,7 +42,7 @@ const Banner = () => {
         <div className="w-full ">
           {/* Heading */}
           <div className="text-center py-10  md:py-10">
-            <p className="text-outline font-bold text-3xl  md:text-7xl 2xl:text-8xl">
+            <p className="text-outline font-bold text-3xl  md:text-7xl 2xl:text-8xl ">
               MD RAKIBUL ISLAM
             </p>
           </div>
@@ -67,7 +78,7 @@ const Banner = () => {
                     "Git",
                     "REST API",
                   ].map((skill, idx) => (
-                    <p key={idx} className="flex items-center text-sm">
+                    <p key={idx} className="flex items-center text-sm ">
                       <BsDot size={24} /> {skill}
                     </p>
                   ))}
@@ -106,18 +117,42 @@ const Banner = () => {
 
             {/* Right Section - Stats */}
             <div className="flex flex-row lg:flex-col w-full lg:w-1/3 text-center lg:text-end space-x-6 lg:space-x-0 lg:space-y-8 sm:tracking-normal md:tracking-wide">
-              <div>
-                <p className="font-semibold text-xl">Projects Done</p>
-                <p className="text-4xl sm:text-6xl font-semibold pt-2">30+</p>
-              </div>
-              <div>
-                <p className="font-semibold text-xl">Years of Experience</p>
-                <p className="text-4xl sm:text-6xl font-semibold pt-2">02</p>
-              </div>
-              <div>
-                <p className="font-semibold text-xl">Worldwide Clients</p>
-                <p className="text-4xl sm:text-6xl font-semibold pt-2">01</p>
-              </div>
+              {[
+                { label: "Projects Done", end: 30, duration: 2, suffix: "+" },
+                {
+                  label: "Years of Experience",
+                  end: 2,
+                  duration: 4,
+                  prefix: "0",
+                },
+                {
+                  label: "Worldwide Clients",
+                  end: 1,
+                  duration: 6,
+                  prefix: "0",
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  custom={i}
+                >
+                  <p className="font-semibold text-xl">{item.label}</p>
+                  <p className="text-4xl sm:text-6xl font-semibold pt-2">
+                    <CountUp
+                      end={item.end}
+                      duration={item.duration}
+                      prefix={item.prefix || ""}
+                      suffix={item.suffix || ""}
+                      enableScrollSpy
+                      scrollSpyDelay={100}
+                    />
+                  </p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
