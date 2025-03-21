@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
-.custom-scroll::-webkit-scrollbar {
+.Scrollbar::-webkit-scrollbar {
     width: 6px;
 
 }
 
-.custom-scroll::-webkit-scrollbar-track {
+.Scrollbar::-webkit-scrollbar-track {
     background: black;
 }
 
-.custom-scroll::-webkit-scrollbar-thumb {
+.Scrollbar::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to bottom, #a855f7, #1e3a8a);
     /* Gradient from purple-500 to blue-950 */
     border-radius: 6px;
 }
 
-.custom-scroll::-webkit-scrollbar-thumb:hover {
+.Scrollbar::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(to bottom, #9333ea, #172554);
     /* Darker on hover */
 }
