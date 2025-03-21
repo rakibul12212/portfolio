@@ -1,7 +1,6 @@
 "use client";
 
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import Container from "../../../UI/[container]/Container";
 
 const containerStyle = {
   width: "100%",
@@ -9,8 +8,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 23.80182, // Your Latitude
-  lng: 90.37631, // Your Longitude
+  lat: 23.80182,
+  lng: 90.37631,
 };
 
 const Location = () => {

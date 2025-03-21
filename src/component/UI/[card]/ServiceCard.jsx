@@ -28,7 +28,7 @@ const ServiceCard = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }} // animate on scroll
+            viewport={{ once: false, amount: 0.2 }} 
           >
             <div className="bg-neutral-800 shadow-md rounded-md p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4 hover:bg-gradient-to-r from-purple-500/40 to-blue-500/40 transition-all duration-300">
               {/* Number */}

@@ -9,7 +9,9 @@ const Footer = () => {
     <Container className="text-[#FFFFFF] py-10">
       <div className="flex items-center justify-center gap-1 tra">
         <FaRegCopyright />
-        <p className="text-xl">{currentYear} rakib, All Rights Reserved.</p>
+        <p className="text-xl tracking-wider">
+          {currentYear} rakib, All Rights Reserved.
+        </p>
       </div>
     </Container>
   );

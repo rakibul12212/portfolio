@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+    overflow-x: hidden;
+}
+
 .Scrollbar::-webkit-scrollbar {
     width: 6px;
 
