@@ -9,7 +9,7 @@ import Container from "@/component/UI/[container]/Container";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
-const fadeInUp = {
+const Counting = {
   hidden: { opacity: 0, y: 30 },
   visible: (i) => ({
     opacity: 1,
@@ -134,7 +134,7 @@ const Banner = () => {
               ].map((item, i) => (
                 <motion.div
                   key={i}
-                  variants={fadeInUp}
+                  variants={Counting}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
