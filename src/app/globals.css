@@ -15,11 +15,11 @@ body {
 
 .Scrollbar::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to bottom, #a855f7, #1e3a8a);
-    /* Gradient from purple-500 to blue-950 */
+
     border-radius: 6px;
 }
 
 .Scrollbar::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(to bottom, #9333ea, #172554);
-    /* Darker on hover */
+
 }
