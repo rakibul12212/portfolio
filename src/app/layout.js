@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="ScrollBar max-w-screen ">
-      <body className="bg-[#000000] overflow-x-hidden">
+    <html lang="en" className="ScrollBar max-w-auto ">
+      <body className="bg-[#000000] ">
         <Navbar />
         {children}
         <Footer />
