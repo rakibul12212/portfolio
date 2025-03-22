@@ -1,2 +1,22 @@
 @import "tailwindcss";
 
+body {
+    overflow-x: hidden;
+}
+
+.ScrollBar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ScrollBar::-webkit-scrollbar-track {
+    background: #0000;
+}
+
+.ScrollBar::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #a855f7, #1e3a8a);
+    border-radius: 6px;
+}
+
+.ScrollBar::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, #9333ea, #172554);
+}
