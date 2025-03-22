@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import Container from "../UI/[container]/Container";
@@ -11,20 +12,38 @@ import Portfolio from "./pages/Portfolio/page";
 import Services from "./pages/Services/page";
 import Testimonial from "./pages/Testimonial/page";
 
-const AnimateOnScroll = ({ children, direction = "up", delay = 0 }) => {
+// Custom hook to detect scroll direction
+const useScrollDirection = () => {
+  const [scrollDirection, setScrollDirection] = useState("down");
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const updateScrollDirection = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else if (currentScrollY < lastScrollY) {
+        setScrollDirection("up");
+      }
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", updateScrollDirection);
+    return () => window.removeEventListener("scroll", updateScrollDirection);
+  }, []);
+
+  return scrollDirection;
+};
+
+// AnimateOnScroll component
+const AnimateOnScroll = ({ children, delay = 0 }) => {
+  const scrollDirection = useScrollDirection();
+
   const getOffset = () => {
-    switch (direction) {
-      case "up":
-        return { x: 0, y: 60 };
-      case "down":
-        return { x: 0, y: -60 };
-      case "left":
-        return { x: 60, y: 0 };
-      case "right":
-        return { x: -60, y: 0 };
-      default:
-        return { x: 0, y: 60 };
-    }
+    if (scrollDirection === "down") return { x: 0, y: 60 };
+    if (scrollDirection === "up") return { x: 0, y: -60 };
+    return { x: 0, y: 60 };
   };
 
   const { x, y } = getOffset();
@@ -34,38 +53,39 @@ const AnimateOnScroll = ({ children, direction = "up", delay = 0 }) => {
       initial={{ opacity: 0, x, y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       transition={{ duration: 0.6, delay, ease: "easeOut" }}
-      viewport={{ amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
     >
       {children}
     </motion.div>
   );
 };
 
+// Main Home Page
 const HomePage = () => {
   return (
     <Container className="text-[#FFFFFF]">
-      <AnimateOnScroll direction="up">
+      <AnimateOnScroll>
         <Banner />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="right" delay={0.1}>
+      <AnimateOnScroll delay={0.1}>
         <Services />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="left" delay={0.2}>
+      <AnimateOnScroll delay={0.2}>
         <Portfolio />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="up" delay={0.3}>
+      <AnimateOnScroll delay={0.3}>
         <Achievements />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="right" delay={0.4}>
+      <AnimateOnScroll delay={0.4}>
         <Testimonial />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="left" delay={0.5}>
+      <AnimateOnScroll delay={0.5}>
         <Blog />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="up" delay={0.6}>
+      <AnimateOnScroll delay={0.6}>
         <Contact />
       </AnimateOnScroll>
-      <AnimateOnScroll direction="up" delay={0.2}>
+      <AnimateOnScroll delay={0.7}>
         <Location />
       </AnimateOnScroll>
     </Container>
