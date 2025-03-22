@@ -42,10 +42,14 @@ const Banner = () => {
               <div>
                 <p className="font-semibold text-lg">BIOGRAPHY</p>
                 <p className="text-neutral-400 pt-2">
-                  Innovative Frontend Developer building sleek, responsive UIs
-                  with Next.js, React, Tailwind, and JavaScript. Passionate
-                  about creating smooth, user-first digital experiences. Always
-                  staying ahead of the latest trends.
+                  Innovative{" "}
+                  <span className="bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent">
+                    Frontend Developer
+                  </span>{" "}
+                  building sleek, responsive UIs with Next.js, React, Tailwind,
+                  and JavaScript. Passionate about creating smooth, user-first
+                  digital experiences. Always staying ahead of the latest
+                  trends.
                 </p>
               </div>
 
