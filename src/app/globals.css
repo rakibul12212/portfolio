@@ -2,10 +2,12 @@
 
 body {
     overflow-x: hidden;
+    display: none;
 }
 
 .ScrollBar::-webkit-scrollbar {
     width: 6px;
+
 }
 
 .ScrollBar::-webkit-scrollbar-track {
