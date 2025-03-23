@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import { motion } from "framer-motion";
 
 import Container from "../UI/[container]/Container";
@@ -12,46 +13,19 @@ import Portfolio from "./pages/Portfolio/page";
 import Services from "./pages/Services/page";
 import Testimonial from "./pages/Testimonial/page";
 
-// Custom hook to detect scroll direction
-const useScrollDirection = () => {
-  const [scrollDirection, setScrollDirection] = useState("down");
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const updateScrollDirection = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setScrollDirection("down");
-      } else if (currentScrollY < lastScrollY) {
-        setScrollDirection("up");
-      }
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", updateScrollDirection);
-    return () => window.removeEventListener("scroll", updateScrollDirection);
-  }, []);
-
-  return scrollDirection;
+// Scroll animation variants
+const scrollVariants = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0 },
 };
 
-// AnimateOnScroll component
-const AnimateOnScroll = ({ children, delay = 0 }) => {
-  const scrollDirection = useScrollDirection();
-
-  const getOffset = () => {
-    if (scrollDirection === "down") return { x: 0, y: 60 };
-    if (scrollDirection === "up") return { x: 0, y: -60 };
-    return { x: 0, y: 60 };
-  };
-
-  const { x, y } = getOffset();
-
+// Smooth scroll + animation section
+const AnimatedSection = ({ children, delay = 0 }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x, y }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      variants={scrollVariants}
+      initial="hidden"
+      whileInView="visible"
       transition={{ duration: 0.6, delay, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
     >
@@ -60,34 +34,52 @@ const AnimateOnScroll = ({ children, delay = 0 }) => {
   );
 };
 
-// Main Home Page
 const HomePage = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // natural easing
+      smooth: true,
+    });
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <Container className="text-[#FFFFFF]">
-      <AnimateOnScroll>
+      <AnimatedSection delay={0}>
         <Banner />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.1}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.1}>
         <Services />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.2}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.2}>
         <Portfolio />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.3}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.3}>
         <Achievements />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.4}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.4}>
         <Testimonial />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.5}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.5}>
         <Blog />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.6}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.6}>
         <Contact />
-      </AnimateOnScroll>
-      <AnimateOnScroll delay={0.7}>
+      </AnimatedSection>
+      <AnimatedSection delay={0.7}>
         <Location />
-      </AnimateOnScroll>
+      </AnimatedSection>
     </Container>
   );
 };
