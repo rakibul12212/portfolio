@@ -4,6 +4,7 @@ export const assets = {
     banner: "/banner/banner.png",
   },
   portfolio: {
+    p7: "/portfolio/p7.png",
     p1: "/portfolio/p1.jpg",
     p2: "/portfolio/p2.jpg",
     p3: "/portfolio/p3.jpg",

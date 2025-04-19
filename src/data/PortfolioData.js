@@ -2,6 +2,17 @@ import { assets } from "@/assets";
 
 export const PortfolioData = [
   {
+    id: "Medicare",
+    image: assets.portfolio.p7,
+    text: "HealthCare App",
+    name: "Medicare",
+    page: "/portfolio",
+    github: "https://github.com/rakibul12212/medicare",
+    demo: "https://medicare-ten-eta.vercel.app/",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio tempore, quaerat sit a ullam, explicabo accusamus aliquid unde vel sed repellendus debitis rerum commodi!",
+  },
+  {
     id: "FlickMall",
     image: assets.portfolio.p1,
     text: "E-Commerce App",
