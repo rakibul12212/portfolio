@@ -126,7 +126,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="/cv/Md-rakibul-islam-resume.pdf"
+                    href="/cv/MD_Rakibul_Isalm_Front-end Developer.pdf"
                     download
                     onClick={() => setIsMenuOpen(false)}
                     className="block group relative transition-all duration-300 hover:before:content-['→'] hover:before:mr-1"
