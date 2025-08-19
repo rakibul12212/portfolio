@@ -14,6 +14,7 @@ export const skills = [
   "CSS",
   "Git",
   "REST API",
+  "GraphQL"
 ];
 
 export const socialLinks = [

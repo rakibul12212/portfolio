@@ -38,10 +38,10 @@ const PortfolioCard = () => {
                 className="rounded-md p-2 text-start cursor-pointer"
               >
                 <Image
+                  src={item.image1}
+                  alt={item.name}
                   width={360}
                   height={320}
-                  src={item.image}
-                  alt={item.name}
                   className="w-full h-60 sm:h-64 object-center rounded-md mb-4 transition-transform duration-300 ease-in-out"
                 />
                 <div className="flex flex-wrap gap-2 text-neutral-400 text-md sm:text-md font-semibold pt-2 mb-2">
